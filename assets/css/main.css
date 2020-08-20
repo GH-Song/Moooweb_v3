@@ -3334,9 +3334,11 @@ input, select, textarea {
 			/*모바일 화면 상단바*/
 			#nav ul li a {
 				font-size: 2.0vw;
+				width: auto;
 			}
 			#nav.alt ul li a {
 				font-size: 2.0vw;
+				width: auto;
 			}
 				#nav + #main {
 					padding-top: 1em;
