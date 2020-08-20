@@ -3332,6 +3332,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
+				display: inline-block;
 				/*display: none;*/
 			}
 			/*모바일 화면 상단바*/
@@ -3340,11 +3341,6 @@ input, select, textarea {
 			}
 			#nav.alt ul li a {
 				font-size: 2.0vw;
-			}
-			#nav ul li  {
-				margin: 0 0.1em;
-			}
-			#nav.alt ul li {
 			}
 				#nav + #main {
 					padding-top: 0 0 1em 0;
