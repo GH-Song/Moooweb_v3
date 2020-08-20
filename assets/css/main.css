@@ -3338,13 +3338,12 @@ input, select, textarea {
 			/*모바일 화면 상단바*/
 			#nav ul li a {
 				font-size: 2.0vw;
-				margin: 0 0.10em;
 			}
 			#nav.alt ul li a {
 				font-size: 2.0vw;
 			}
 			#nav ul li  {
-				margin: 0 0.10em;
+				margin: 0 0.2em;
 			}
 			#nav.alt ul li {
 				font-size: 2.0vw;
