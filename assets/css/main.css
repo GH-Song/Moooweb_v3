@@ -3332,7 +3332,6 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: inline-block;
 				/*display: none;*/
 			}
 			/*모바일 화면 상단바*/
