@@ -1802,10 +1802,11 @@ input, select, textarea {
 
 		}
 
-/* Box */
+/* Box 박스*/
 
 	.box {
 		border-radius: 8px;
+		border-color: rgba(255, 255, 255, 0);
 		border: solid;
 		margin-bottom: 2em;
 		padding: 1.5em;
@@ -1823,9 +1824,33 @@ input, select, textarea {
 			padding: 0;
 		}
 
-	.box {
-		border-color: rgba(255, 255, 255, 0.35);
+	.box.person {
+		width: 400px;
+		height: 400px;
+		box-sizing: border-box;
+		border: solid 0.1px rgba(255, 255, 255, 0);
+		padding: 1em 0.2em;
 	}
+
+		.box.person h3 {
+			margin: 0;
+		}
+
+		.box.person .image {
+			margin-bottom: 0.1em;
+		}
+
+			.box.person .image img {
+				margin: 1% auto 0.2em auto;
+				max-width:90%;
+				max-height:230px;
+			}
+
+	.box.paragraph {
+		border-bottom: solid 2px #dbdbdb;
+		padding: 3em 1.5em;
+	}
+
 
 /* Button */
 
@@ -2383,6 +2408,13 @@ input, select, textarea {
 
 			.image.left img, .image.right img {
 				width: 100%;
+			}
+			.image.round img {
+				border-radius: 100%;
+			}
+
+			.image.semiround img {
+				border-radius: 5%;
 			}
 
 		.image.left {
@@ -3230,7 +3262,7 @@ input, select, textarea {
 		position: absolute;
 		left:0; right:0;
 	 	margin:auto;
-		max-width: calc(100% - 4em);
+		max-width: calc(100% - 10em);
 		padding: 0.3em;
 		background-color: #f7f7f7; /* nav 배경색 */
 		border-top-left-radius: 0.25em;
@@ -3301,7 +3333,7 @@ input, select, textarea {
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
-					font-size: 1.5vw;
+					font-size: 1.3vw;
 				}
 
 					#nav ul li a:hover {
@@ -3331,6 +3363,9 @@ input, select, textarea {
 				}
 
 			@media screen and (max-width: 800px) {
+				#nav {
+					max-width: calc(100% - 6em);
+				}
 				#nav ul li a {
 					font-size: 2vw;
 				}
@@ -3786,10 +3821,14 @@ input, select, textarea {
 /* Wrapper - 메인 창 너비 결정 */
 
 	#wrapper {
-		max-width: calc(100% - 4em);
+		max-width: calc(100% - 10em);
 		margin: 0 auto;
 	}
-
+		@media screen and (max-width: 800px) {
+			#wrapper {
+				max-width: calc(100% - 6em);
+			}
+		}
 		@media screen and (max-width: 480px) {
 
 			#wrapper {

@@ -16,30 +16,23 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style type="text/css">
-
-	.swiper-container {
-	  max-width: 90%;
-		height: 100%;
-		margin: auto;
-	}
-	.swiper-slide {
-		margin: 0 auto auto auto;
-		text-align: center;
-
-		/* Center slide text vertically */
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
-	}
+			.people-container {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+  			grid-auto-rows: minmax(100px, auto)
+			}
+			.person .image img{
+				margin: 1% auto 0.2em auto;
+				max-width:90%;
+				max-height:230px;
+			}
+			@media screen and (max-width: 600px){
+				.people-container {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+	  			grid-auto-rows: minmax(100px, auto)
+				}
+			}
 	  </style>
 	</head>
 
@@ -74,197 +67,54 @@
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Research</h2>
-								</header>
-								<p>We focus on the development of novel tools that combine optics, acoustics, and nanophotonics to tackle problems in biology and medicine.</p>
-
-								<ul class="features">
-									<li>
-										<img src="images/FIG1_DeepTissue_Resize.jpg" width="300" height = "250" alt="Pic 01" />
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<img src="images/FIG1_DeepTissue_Resize.jpg" width="300" height = "250" alt="Pic 01" />
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-
-								<ul class="features">
-									<li>
-										<img src="images/FIG2_Neuromodulation_resize.png" width="300" height = "250" alt="Pic 02" />
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<img src="images/FIG3_LightManipulation_resize.jpg" width="300" height = "250" alt="Pic 03" />
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-
-
-
-						<!-- Second Section -->
-
-							<section id="colorpoint" class="main special" style="color:white; padding:20px; ">
-								<header class="major">
 									<h2>People</h2>
 								</header>
 
-								<div class="swiper-container multi">
-									<div class="swiper-wrapper">
-
-											<div class="swiper-slide">
-												<div class="person">
-													<div class="image semiround">
-														<img src="images/people/jang.jpg" style="max-width: 90%; max-height:230px; margin: auto;" alt="Person 1" />
-													</div>
-													<h4><br />Mooseok Jang</h4>
-													<h5>Group Leader</h5>
-												</div>
+								<div class="people-container">
+										<div class="  person">
+											<div class="image semiround">
+												<img src="images/people/jang.jpg"  alt="Person 1" />
 											</div>
+											<h4><br />Mooseok Jang</h4>
+											<h5>Group Leader</h5>
+										</div>
 
-											<div class="swiper-slide">
-												<div class="person">
-													<div class="image semiround">
-														<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 2" />
-													</div>
-													<h4><br />Taean Chang</h4>
-													<h5>Ph.D. candidate</h5>
-												</div>
-											</div>
 
-											<div class="swiper-slide">
-												<div class="person">
-													<div class="image semiround">
-														<img src="images/people/Donggu.png"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 3" />
-													</div>
-													<h4><br />DongGu Lee</h4>
-													<h5>Ph.D. candidate</h5>
-												</div>
+										<div class="  person">
+											<div class="image semiround">
+												<img src="images/people/unknown.jpg" alt="Person 2" />
 											</div>
+											<h4><br />Taean Chang</h4>
+											<h5>Ph.D. candidate</h5>
+										</div>
 
-											<div class="swiper-slide">
-												<div class="person">
-													<div class="image semiround">
-														<img src="images/people/SGH.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 4" />
-													</div>
-													<h4><br />GookHo Song</h4>
-													<h5>Master candidate</h5>
-												</div>
+										<div class="  person">
+											<div class="image semiround">
+												<img src="images/people/Donggu.png"  alt="Person 3" />
 											</div>
+											<h4><br />DongGu Lee</h4>
+											<h5>Ph.D. candidate</h5>
+										</div>
 
-											<div class="swiper-slide">
-												<div class="person">
-													<div class="image semiround">
-														<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 6" />
-													</div>
-													<h4><br />Chanseok Lee</h4>
-													<h5>Master candidate</h5>
-												</div>
+										<div class="  person">
+											<div class="image semiround">
+												<img src="images/people/SGH.jpg"  alt="Person 4" />
 											</div>
-									</div>
-							    <!-- Add Arrows -->
-							    <div class="swiper-button-next"></div>
-							    <div class="swiper-button-prev"></div>
+											<h4><br />GookHo Song</h4>
+											<h5>Master candidate</h5>
+										</div>
+
+										<div class="  person">
+											<div class="image semiround">
+												<img src="images/people/unknown.jpg"  alt="Person 6" />
+											</div>
+											<h4><br />Chanseok Lee</h4>
+											<h5>Master candidate</h5>
+										</div>
 								</div>
 
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
+
 							</section>
-						<!-- Second Section -->
-							<section id="fourth" class="main special">
-								<header class="major">
-									<h2>Lab interior</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-
-								<div class="swiper-container basic">
-							    <div class="swiper-wrapper">
-							      <div class="swiper-slide"><img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1"></div>
-										<div class="swiper-slide"><img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1"></div>
-										<div class="swiper-slide"><img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1"></div>
-									</div>
-									<!-- Add Pagination -->
-									<div class="swiper-pagination"></div>
-									<!-- Add Arrows -->
-									<div class="swiper-button-next"></div>
-									<div class="swiper-button-prev"></div>
-							  </div>
-
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-
-							<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-
-					</div>
 
 				<!-- Footer -->
 					<footer id="footer">

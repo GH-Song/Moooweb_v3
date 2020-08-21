@@ -100,12 +100,16 @@
 
 								<ul class="features">
 									<li>
-										<img src="images/FIG1_DeepTissue_Resize.jpg" width="300" height = "250" alt="Pic 01" />
+										<div class="image fit">
+											<img src="images/FIG1_DeepTissue_Resize.jpg" width="300" height = "250" alt="Pic 01" />
+										</div>
 										<h3>Ipsum consequat</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
-										<img src="images/FIG1_DeepTissue_Resize.jpg" width="300" height = "250" alt="Pic 01" />
+										<div class="image fit">
+											<img src="images/FIG1_DeepTissue_Resize.jpg" width="300" height = "250" alt="Pic 01" />
+										</div>
 										<h3>Amed sed feugiat</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
@@ -113,12 +117,16 @@
 
 								<ul class="features">
 									<li>
-										<img src="images/FIG2_Neuromodulation_resize.png" width="300" height = "250" alt="Pic 02" />
+										<div class="image fit">
+											<img src="images/FIG2_Neuromodulation_resize.png" width="300" height = "250" alt="Pic 02" />
+										</div>
 										<h3>Ipsum consequat</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
-										<img src="images/FIG3_LightManipulation_resize.jpg" width="300" height = "250" alt="Pic 03" />
+										<div class="image fit">
+											<img src="images/FIG3_LightManipulation_resize.jpg" width="300" height = "250" alt="Pic 03" />
+										</div>
 										<h3>Amed sed feugiat</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
@@ -144,9 +152,9 @@
 									<div class="swiper-wrapper">
 
 											<div class="swiper-slide">
-												<div class="person">
+												<div class="box person">
 													<div class="image semiround">
-														<img src="images/people/jang.jpg" style="max-width: 90%; max-height:230px; margin: auto;" alt="Person 1" />
+														<img src="images/people/jang.jpg"  alt="Person 1" />
 													</div>
 													<h4><br />Mooseok Jang</h4>
 													<h5>Group Leader</h5>
@@ -154,9 +162,9 @@
 											</div>
 
 											<div class="swiper-slide">
-												<div class="person">
+												<div class="box person">
 													<div class="image semiround">
-														<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 2" />
+														<img src="images/people/unknown.jpg" alt="Person 2" />
 													</div>
 													<h4><br />Taean Chang</h4>
 													<h5>Ph.D. candidate</h5>
@@ -164,9 +172,9 @@
 											</div>
 
 											<div class="swiper-slide">
-												<div class="person">
+												<div class="box person">
 													<div class="image semiround">
-														<img src="images/people/Donggu.png"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 3" />
+														<img src="images/people/Donggu.png"  alt="Person 3" />
 													</div>
 													<h4><br />DongGu Lee</h4>
 													<h5>Ph.D. candidate</h5>
@@ -174,9 +182,9 @@
 											</div>
 
 											<div class="swiper-slide">
-												<div class="person">
+												<div class="box person">
 													<div class="image semiround">
-														<img src="images/people/SGH.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 4" />
+														<img src="images/people/SGH.jpg"  alt="Person 4" />
 													</div>
 													<h4><br />GookHo Song</h4>
 													<h5>Master candidate</h5>
@@ -184,9 +192,9 @@
 											</div>
 
 											<div class="swiper-slide">
-												<div class="person">
+												<div class="box person">
 													<div class="image semiround">
-														<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 6" />
+														<img src="images/people/unknown.jpg"  alt="Person 6" />
 													</div>
 													<h4><br />Chanseok Lee</h4>
 													<h5>Master candidate</h5>
@@ -204,7 +212,7 @@
 									</ul>
 								</footer>
 							</section>
-					
+
 						<!-- Second Section -->
 							<section id="five" class="main special">
 								<header class="major">
@@ -317,13 +325,6 @@
 								<dt>Email</dt>
 								<dd><a href="#">information@untitled.tld</a></dd>
 							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
 						</section>
 
 					</footer>
@@ -371,8 +372,9 @@
 			        prevEl: '.swiper-button-prev',
 			      },
 			    });
+
 					new Swiper('.multi-auto', {
-						slidesPerView: 4,
+						slidesPerView: 1,
 						spaceBetween: 30,
 						loop: true,
 			      autoplay: {
@@ -387,7 +389,30 @@
 			        nextEl: '.swiper-button-next',
 			        prevEl: '.swiper-button-prev',
 			      },
+						breakpoints: {
+			        600: {
+			          slidesPerView: 1,
+			          spaceBetween: 20,
+			        },
+							700: {
+			          slidesPerView: 2,
+			          spaceBetween: 40,
+			        },
+			        900: {
+			          slidesPerView: 3,
+			          spaceBetween: 40,
+			        },
+			        1200: {
+			          slidesPerView: 4,
+			          spaceBetween: 50,
+			        },
+							1400: {
+			          slidesPerView: 5,
+			          spaceBetween: 50,
+			        },
+			      }
 			    });
+
 					 var galleryThumbs = new Swiper('.gallery-thumbs', {
 			      spaceBetween: 10,
 			      slidesPerView: 8,
