@@ -3226,12 +3226,13 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #636363;
+		color: #636363; /* nav 글씨색 */
 		position: absolute;
-		width: 64em;
+		left:0; right:0;
+	 	margin:auto;
 		max-width: calc(100% - 4em);
-		padding: 0.5em;
-		background-color: #f7f7f7;
+		padding: 0.3em;
+		background-color: #f7f7f7; /* nav 배경색 */
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3283,7 +3284,7 @@ input, select, textarea {
 				-ms-transition: margin 0.2s ease;
 				transition: margin 0.2s ease;
 				display: inline-block;
-				margin: 0 0.2em;
+				margin: auto; /* nav 각 요소 외부 간격 결정*/
 				padding: 0;
 				vertical-align: middle;
 			}
@@ -3296,10 +3297,11 @@ input, select, textarea {
 					display: inline-block;
 					height: 2.25em;
 					line-height: 2.25em;
-					padding: 0 1.0em;
+					padding: 0 1.0em; /* nav 요소 글씨와 둥근창 내부 여백 결정*/
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
+					font-size: 1.5vw;
 				}
 
 					#nav ul li a:hover {
@@ -3322,29 +3324,35 @@ input, select, textarea {
 		}
 
 			#nav.alt ul li {
-				margin: 0 0.175em;
 			}
 
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 736px) {
-
-			/*모바일 화면 상단바*/
-			#nav ul li a {
-				font-size: 2.0vw;
-				width: auto;
-			}
-			#nav.alt ul li a {
-				font-size: 2.0vw;
-				width: auto;
-			}
-				#nav + #main {
-					padding-top: 1em;
+			@media screen and (max-width: 800px) {
+				#nav ul li a {
+					font-size: 2vw;
+				}
 			}
 
-		}
+			@media screen and (max-width: 480px) {
+
+				#nav {
+					max-width: calc(100% - 2em);
+				}
+				#nav ul li a {
+					font-size: 2.5vw;
+				}
+			}
+
+			@media screen and (max-width: 360px) {
+
+				#nav {
+					max-width: calc(100% - 0.1em);
+				}
+
+			}
 
 /* Main */
 
@@ -3775,10 +3783,9 @@ input, select, textarea {
 
 		}
 
-/* Wrapper */
+/* Wrapper - 메인 창 너비 결정 */
 
 	#wrapper {
-		width: 64em;
 		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
@@ -3794,7 +3801,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#wrapper {
-				max-width: 100%;
+				max-width: calc(100% - 0.1em);
 			}
 
 		}
