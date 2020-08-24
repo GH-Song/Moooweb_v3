@@ -2402,6 +2402,12 @@ input, select, textarea {
 			display: block;
 		}
 
+		.image.research img	{
+			width: 400px;
+			height: 300px;
+			max-width:100%;
+		}
+
 		.image.left, .image.right {
 			max-width: 40%;
 		}
