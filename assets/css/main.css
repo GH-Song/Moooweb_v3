@@ -2766,13 +2766,15 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75em 0.75em;
+			text-align: left;
+			vertical-align: middle;
 		}
 
 		table th {
 			font-size: 0.9em;
 			font-weight: 400;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			padding: 0.35em 0.75em 0.35em 0.75em;
+			text-align: center;
 		}
 
 		table thead {
