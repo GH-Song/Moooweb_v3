@@ -226,12 +226,12 @@
 
 								<div class="swiper-container gallery-top">
 							    <div class="swiper-wrapper">
-										<div class="swiper-slide"><img src="images/interior/lab1.jpg"  alt="Room 1"></div>
-										<div class="swiper-slide"><img src="images/interior/lab2.jpg"  alt="Room 1"></div>
-										<div class="swiper-slide"><img src="images/interior/lab3.jpg"  alt="Room 1"></div>
-										<div class="swiper-slide"><img src="images/interior/lab4.jpg"  alt="Room 1"></div>
-										<div class="swiper-slide"><img src="images/interior/lab5.jpg"  alt="Room 1"></div>
-										<div class="swiper-slide"><img src="images/interior/lab6.jpg"  alt="Room 1"></div>
+										<div class="swiper-slide"><img src="images/interior/lab1.jpg" class="swiper-lazy"  alt="Room 1"></div>
+										<div class="swiper-slide"><img src="images/interior/lab2.jpg" class="swiper-lazy" alt="Room 1"></div>
+										<div class="swiper-slide"><img src="images/interior/lab3.jpg" class="swiper-lazy" alt="Room 1"></div>
+										<div class="swiper-slide"><img src="images/interior/lab4.jpg" class="swiper-lazy" alt="Room 1"></div>
+										<div class="swiper-slide"><img src="images/interior/lab5.jpg" class="swiper-lazy" alt="Room 1"></div>
+										<div class="swiper-slide"><img src="images/interior/lab6.jpg" class="swiper-lazy" alt="Room 1"></div>
 									</div>
 									<!-- Add Arrows -->
 									<div class="swiper-button-next"></div>
@@ -325,6 +325,9 @@
 						slidesPerGroup: 1,
 						loop: true,
 						loopFillGroupWithBlank: false,
+						lazy:{
+							loadPrevNext: true
+						},
 						pagination: {
 							el: '.swiper-pagination',
 							clickable: true,
@@ -338,6 +341,9 @@
 			      slidesPerView: 1,
 			      spaceBetween: 30,
 			      loop: true,
+						lazy:{
+							loadPrevNext: true
+						},
 			      pagination: {
 			        el: '.swiper-pagination',
 			        clickable: true,
@@ -356,6 +362,9 @@
 			        delay: 2000,
 			        disableOnInteraction: false,
 			      },
+						lazy:{
+							loadPrevNext: true
+						},
 			      pagination: {
 			        el: '.swiper-pagination',
 			        clickable: true,
@@ -392,6 +401,9 @@
 			      spaceBetween: 10,
 			      slidesPerView: 8,
 			      freeMode: true,
+						lazy:{
+							loadPrevNext: true
+						},
 			      watchSlidesVisibility: true,
 			      watchSlidesProgress: true,
 			    });
@@ -402,6 +414,9 @@
 			        nextEl: '.swiper-button-next',
 			        prevEl: '.swiper-button-prev',
 			      },
+						lazy:{
+							loadPrevNext: true
+						},
 			      thumbs: {
 			        swiper: galleryThumbs,
 			      },
