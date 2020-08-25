@@ -1808,7 +1808,7 @@ input, select, textarea {
 		border-radius: 8px;
 		border-color: rgba(255, 255, 255, 0);
 		border: solid;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 		padding: 1.5em;
 	}
 
@@ -1826,31 +1826,40 @@ input, select, textarea {
 
 	.box.person {
 		width: 400px;
-		height: 400px;
-		box-sizing: border-box;
-		border: solid 0.1px rgba(255, 255, 255, 0);
-		padding: 1em 0.2em;
+		height: 360px;
+		border: solid 0px rgba(255, 255, 255, 0);
+		position:relative;
 	}
 
 		.box.person h3 {
 			margin: 0;
 		}
 
-		.box.person .image {
-			margin-bottom: 0.1em;
+		.name {
+			position:absolute;
+			top:250px; bottom:0; left:0; right:0;
+			display:block;
+			text-align: center;
+		}
+		.box.person .profile {
+			position:absolute;
+			top: 0; bottom:0; left:0; right:0;
+			height: 250px;
 		}
 
-			.box.person .image img {
-				margin: 1% auto 0.2em auto;
-				max-width:90%;
-				max-height:230px;
-			}
+	 .box.person .profile img {
+		position: absolute;
+	left:0; right:0; bottom:0;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 5%;
+	}
 
 	.box.paragraph {
 		border-bottom: solid 2px #dbdbdb;
 		padding: 3em 1.5em;
 	}
-
 
 /* Button */
 
@@ -3274,7 +3283,7 @@ input, select, textarea {
 		position: absolute;
 		left:0; right:0;
 	 	margin:auto;
-		max-width: calc(100% - 15em);
+		max-width: calc(85% - 10em);
 		padding: 0.3em;
 		background-color: #f7f7f7; /* nav 배경색 */
 		border-top-left-radius: 0.25em;
@@ -3373,13 +3382,20 @@ input, select, textarea {
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
-
+			@media screen and (max-width: 980px) {
+						#nav {
+							max-width: calc(100% - 8em);
+						}
+					}
 			@media screen and (max-width: 736px) {
 				#nav {
 					max-width: calc(100% - 6em);
 				}
 				#nav ul li a {
 					font-size: 2vw;
+				}
+				#nav.alt ul li a {
+					font-size: 2.2vw;
 				}
 			}
 
@@ -3391,12 +3407,15 @@ input, select, textarea {
 				#nav ul li a {
 					font-size: 2.5vw;
 				}
+				#nav.alt ul li a {
+					font-size: 2.6vw;
+				}
 			}
 
 			@media screen and (max-width: 360px) {
 
 				#nav {
-					max-width: calc(100% - 0.1em);
+					width: calc(100% - 0.5em);
 				}
 
 			}
@@ -3833,9 +3852,14 @@ input, select, textarea {
 /* Wrapper - 메인 창 너비 결정 */
 
 	#wrapper {
-		max-width: calc(100% - 15em);
+		max-width: calc(85% - 10em);
 		margin: 0 auto;
 	}
+		@media screen and (max-width: 980px) {
+			#wrapper {
+				max-width: calc(100% - 8em);
+			}
+		}
 		@media screen and (max-width: 736px) {
 			#wrapper {
 				max-width: calc(100% - 6em);
@@ -3852,7 +3876,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#wrapper {
-				max-width: calc(100% - 0.1em);
+				max-width: calc(100% - 0.5em);
 			}
 
 		}
