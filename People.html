@@ -19,20 +19,85 @@
 			.people-container {
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
-  			grid-auto-rows: minmax(100px, auto)
+  			grid-auto-rows: minmax(500px, auto);
 			}
-			.person .image img{
-				margin: 1% auto 0.2em auto;
-				max-width:90%;
-				max-height:230px;
-			}
-			@media screen and (max-width: 600px){
+			@media screen and (max-width: 1780px){
 				.people-container {
 					display: grid;
 					grid-template-columns: repeat(3, 1fr);
-	  			grid-auto-rows: minmax(100px, auto)
+	  			grid-auto-rows: minmax(500px, auto)
 				}
 			}
+			@media screen and (max-width: 1480px){
+				.people-container {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+	  			grid-auto-rows: minmax(500px, auto)
+				}
+			}
+			@media screen and (max-width: 1080px){
+				.people-container {
+					display: grid;
+					grid-template-columns: repeat(1, 1fr);
+	  			grid-auto-rows: minmax(500px, auto)
+				}
+			}
+
+			h3 {
+				/*name*/
+				font-size: 1.4em;
+				font-weight: 500;
+				line-height: 1;
+			}
+			h4 {
+				font-size: 1em;
+			}
+			h5 {
+				line-height: 0.7;
+			}
+			.people-box {
+				position:relative;
+				margin: 0.1em 0.2em 3em 0.2em;
+				border: solid 1px rgba(1, 1, 1, 0.2);
+			}
+			.image-box{
+				display:block;
+				text-align: center;
+			}
+			.info-box {
+				display:block;
+				padding: 0 2em 1em 2em;
+				text-align: left;
+				height:auto;
+				overflow: auto;
+			}
+			.contact-box {
+				padding: 1em 2em;
+				text-align: left;
+				height:auto;
+				overflow: auto;
+			}
+			.image-box img{
+				margin: 1% auto 0.2em auto;
+				max-width:100%;
+				height:auto;
+			}
+
+
+			.box.person .profile {
+				position:absolute;
+				top: 0; bottom:0; left:0; right:0;
+				height: 250px;
+			}
+
+		 .box.person .profile img {
+			position: absolute;
+			left:0; right:0; bottom:0;
+			max-width: 100%;
+			height: auto;
+			margin: 0 auto;
+			border-radius: 5%;
+		}
 	  </style>
 	</head>
 
@@ -70,46 +135,83 @@
 								</header>
 
 								<div class="people-container">
-										<div class="  person">
-											<div class="image semiround">
+
+										<div class="people-box">
+											<div class="image-box">
 												<img src="images/people/jang.jpg"  alt="Person 1" />
 											</div>
-											<h4><br />Mooseok Jang</h4>
-											<h5>Group Leader</h5>
-										</div>
-
-
-										<div class="  person">
-											<div class="image semiround">
-												<img src="images/people/unknown.jpg" alt="Person 2" />
+											<div class="info-box">
+												<h3><br />Mooseok Jang</h3>
+												<h4>Principle Investigator</h4>
+												<h5><strong>PhD: </strong>Electrical Engineering, Caltech</h5>
+												<h5><strong>BS: </strong> Physics, KAIST</h5>
 											</div>
-											<h4><br />Taean Chang</h4>
-											<h5>Ph.D. candidate</h5>
+											<div class="contact-box">
+												<h5>aaaaaaa@gmail.com</h5>
+												<a href="http://mooo.ivyro.net/Mooseok%20Jang_CV_PUBLIC.pdf">[C.V.]</a> and <a href="https://scholar.google.com/citations?user=QYPGDkAAAAAJ&hl=en">[Google Scholar]</a>
+											</div>
+										</div>
+										<div class="people-box">
+											<div class="image-box">
+												<img src="images/people/jang.jpg"  alt="Person 1" />
+											</div>
+											<div class="info-box">
+												<h3><br />Mooseok Jang</h3>
+												<h4>Principle Investigator</h4>
+												<h5><strong>PhD: </strong>Electrical Engineering, Caltech</h5>
+												<h5><strong>BS: </strong> Physics, KAIST</h5>
+											</div>
+											<div class="contact-box">
+												<h5>aaaaaaa@gmail.com</h5>
+												<a href="http://mooo.ivyro.net/Mooseok%20Jang_CV_PUBLIC.pdf">[C.V.]</a> and <a href="https://scholar.google.com/citations?user=QYPGDkAAAAAJ&hl=en">[Google Scholar]</a>
+											</div>
+										</div>
+										<div class="people-box">
+											<div class="image-box">
+												<img src="images/people/jang.jpg"  alt="Person 1" />
+											</div>
+											<div class="info-box">
+												<h3><br />Mooseok Jang</h3>
+												<h4>Principle Investigator</h4>
+												<h5><strong>PhD: </strong>Electrical Engineering, Caltech</h5>
+												<h5><strong>BS: </strong> Physics, KAIST</h5>
+											</div>
+											<div class="contact-box">
+												<h5>aaaaaaa@gmail.com</h5>
+												<a href="http://mooo.ivyro.net/Mooseok%20Jang_CV_PUBLIC.pdf">[C.V.]</a> and <a href="https://scholar.google.com/citations?user=QYPGDkAAAAAJ&hl=en">[Google Scholar]</a>
+											</div>
+										</div>
+										<div class="people-box">
+											<div class="image-box">
+												<img src="images/people/jang.jpg"  alt="Person 1" />
+											</div>
+											<div class="info-box">
+												<h3><br />Mooseok Jang</h3>
+												<h4>Principle Investigator</h4>
+												<h5><strong>PhD: </strong>Electrical Engineering, Caltech</h5>
+												<h5><strong>BS: </strong> Physics, KAIST</h5>
+											</div>
+											<div class="contact-box">
+												<h5>aaaaaaa@gmail.com</h5>
+												<a href="http://mooo.ivyro.net/Mooseok%20Jang_CV_PUBLIC.pdf">[C.V.]</a> and <a href="https://scholar.google.com/citations?user=QYPGDkAAAAAJ&hl=en">[Google Scholar]</a>
+											</div>
+										</div>
+										<div class="people-box">
+											<div class="image-box">
+												<img src="images/people/jang.jpg"  alt="Person 1" />
+											</div>
+											<div class="info-box">
+												<h3><br />Mooseok Jang</h3>
+												<h4>Principle Investigator</h4>
+												<h5><strong>PhD: </strong>Electrical Engineering, Caltech</h5>
+												<h5><strong>BS: </strong> Physics, KAIST</h5>
+											</div>
+											<div class="contact-box">
+												<h5>aaaaaaa@gmail.com</h5>
+												<a href="http://mooo.ivyro.net/Mooseok%20Jang_CV_PUBLIC.pdf">[C.V.]</a> and <a href="https://scholar.google.com/citations?user=QYPGDkAAAAAJ&hl=en">[Google Scholar]</a>
+											</div>
 										</div>
 
-										<div class="  person">
-											<div class="image semiround">
-												<img src="images/people/Donggu.png"  alt="Person 3" />
-											</div>
-											<h4><br />DongGu Lee</h4>
-											<h5>Ph.D. candidate</h5>
-										</div>
-
-										<div class="  person">
-											<div class="image semiround">
-												<img src="images/people/SGH.jpg"  alt="Person 4" />
-											</div>
-											<h4><br />GookHo Song</h4>
-											<h5>Master candidate</h5>
-										</div>
-
-										<div class="  person">
-											<div class="image semiround">
-												<img src="images/people/unknown.jpg"  alt="Person 6" />
-											</div>
-											<h4><br />Chanseok Lee</h4>
-											<h5>Master candidate</h5>
-										</div>
 								</div>
 
 
