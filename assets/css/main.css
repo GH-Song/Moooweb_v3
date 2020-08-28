@@ -2765,8 +2765,8 @@ input, select, textarea {
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-	}
+			overflow:visible;
+		}
 
 	table {
 		margin: 0 0 2em 0;
