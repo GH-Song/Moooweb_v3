@@ -126,7 +126,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Noto Sans";
+		font-family: "Quicksand", sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.5;
@@ -244,7 +244,6 @@ input, select, textarea {
 	code {
 		border-radius: 8px;
 		border: solid 1px;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -252,7 +251,6 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -634,7 +632,6 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
 				font-weight: 900;
 			}
 
@@ -771,7 +768,6 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
 
@@ -785,10 +781,6 @@ input, select, textarea {
 
 		.icon.solid:before {
 			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
 		}
 
 		.icon.major {
@@ -1400,6 +1392,8 @@ input, select, textarea {
 
 			#header.alt h1 {
 				font-size: 3em;
+				font-weight: 400;
+				letter-spacing: -0.025em;
 			}
 
 			#header.alt > * {
