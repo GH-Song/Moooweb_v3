@@ -1388,6 +1388,8 @@ input, select, textarea {
 		/* 최상단 */
 		#header.alt {
 			padding: 5em 3em 1em 3em ;
+			animation: fadeIn;
+			animation-duration: 2s;
 		}
 
 			#header.alt h1 {
@@ -1395,28 +1397,11 @@ input, select, textarea {
 				font-weight: 400;
 				letter-spacing: -0.025em;
 			}
-
 			#header.alt > * {
-				-moz-transition: opacity 2s ease;
-				-webkit-transition: opacity 2s ease;
-				-ms-transition: opacity 2s ease;
-				transition: opacity 2s ease;
-				-moz-transition-delay: 0s;
-				-webkit-transition-delay: 0s;
-				-ms-transition-delay: 0s;
-				transition-delay: 0s;
 				opacity: 1;
 			}
 
 			#header.alt .logo {
-				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
-				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
-				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
-				transition: opacity 1.25s ease, transform 0.5s ease;
-				-moz-transition-delay: 0s;
-				-webkit-transition-delay: 0s;
-				-ms-transition-delay: 0s;
-				transition-delay: 0s;
 				display: block;
 				margin: 0 0 1.5em 0;
 			}
@@ -1518,17 +1503,15 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition:  all 0.3s ease-in-out;
+		-ms-transition:  all 0.3s ease-in-out;
+		transition:  all 0.3s  ease-in-out;
 		background-color: #ffffff;
 		color: #636363; /* nav 글씨색 */
-		position: absolute;
-		left:0; right:0;
-	 	margin:auto;
-		max-width: calc(85% - 10em);
 		padding: 0.3em;
+		position:relative;
+		transform: translateY(10px);
 		background-color: #f7f7f7; /* nav 배경색 */
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
@@ -1576,10 +1559,10 @@ input, select, textarea {
 		}
 
 			#nav ul li {
-				-moz-transition: margin 0.2s ease;
-				-webkit-transition: margin 0.2s ease;
-				-ms-transition: margin 0.2s ease;
-				transition: margin 0.2s ease;
+				-moz-transition: all 0.3s ease-in-out;
+				-webkit-transition:  all 0.3s ease-in-out;
+				-ms-transition:  all 0.3s ease-in-out;
+				transition:  all 0.3s  ease-in-out;
 				display: inline-block;
 				margin: auto; /* nav 각 요소 외부 간격 결정*/
 				padding: 0;
@@ -1587,10 +1570,10 @@ input, select, textarea {
 			}
 
 				#nav ul li a {
-					-moz-transition: font-size 0.2s ease;
-					-webkit-transition: font-size 0.2s ease;
-					-ms-transition: font-size 0.2s ease;
-					transition: font-size 0.2s ease;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition:  all 0.3s ease-in-out;
+					-ms-transition:  all 0.3s ease-in-out;
+					transition:  all 0.3s  ease-in-out;
 					display: inline-block;
 					height: 2.25em;
 					line-height: 2.25em;
@@ -1612,7 +1595,8 @@ input, select, textarea {
 
 		#nav.alt {
 			position: fixed;
-			top: 0;
+			top: -11px; left:0; right:0;
+			width:auto;
 			padding: 0.5em 0.5em;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
@@ -1628,12 +1612,10 @@ input, select, textarea {
 				}
 			@media screen and (max-width: 980px) {
 						#nav {
-							max-width: calc(100% - 8em);
 						}
 					}
 			@media screen and (max-width: 736px) {
 				#nav {
-					max-width: calc(100% - 6em);
 				}
 				#nav ul li a {
 					font-size: 2vw;
@@ -1646,7 +1628,6 @@ input, select, textarea {
 			@media screen and (max-width: 480px) {
 
 				#nav {
-					max-width: calc(100% - 2em);
 				}
 				#nav ul li a {
 					font-size: 2.5vw;
@@ -1659,7 +1640,6 @@ input, select, textarea {
 			@media screen and (max-width: 360px) {
 
 				#nav {
-					width: calc(100% - 0.5em);
 				}
 
 			}
