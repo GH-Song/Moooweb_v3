@@ -126,7 +126,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Quicksand", sans-serif;
+		font-family: "Quicksand";
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.5;
@@ -1389,7 +1389,7 @@ input, select, textarea {
 		#header.alt {
 			padding: 5em 3em 1em 3em ;
 			animation: fadeIn;
-			animation-duration: 2s;
+			animation-duration: 1.5s;
 		}
 
 			#header.alt h1 {
