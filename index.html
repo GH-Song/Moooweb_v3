@@ -22,11 +22,7 @@
 				margin: auto;
 			}
 			.swiper-slide {margin: 0 auto auto auto;}
-			.io-img {
-        width: 80%;
-        height: 80%;
-        margin-bottom: 2rem;
-    	}
+			.io-img { margin-bottom: 2rem; }
 	  </style>
 	</head>
 
@@ -72,7 +68,7 @@
 									<!-- Research 1 -->
 									<li>
 										<div class="image research">
-											<img class="io-img" data-src="images/FIG1_DeepTissue_Resize.jpg" alt="Pic 01" />
+											<img class="io-img" data-src="images/FIG1_DeepTissue_Resize.jpg" />
 										</div>
 
 										<h2 style="font-size:1.5em; padding-top:0.5em">Deep Tissue Imaging</h2>
@@ -81,7 +77,7 @@
 									<!-- Research 2 -->
 									<li>
 										<div class="image research">
-											<img class="io-img" data-src="images/FIG2_Neuromodulation_resize.png" alt="Pic 01" />
+											<img class="io-img" data-src="images/FIG2_Neuromodulation_resize.png" />
 										</div>
 										<h3 style="font-size:1.5em; padding-top:0.5em">Optical Neuromodulation</h3>
 										<p style='text-align:left;'>Adult brain is composed more than 80 billion neurons and 100 trillion synapses (i.e. a junction between neurons). Revealing such complex connection represents an indispensable foundation to understand how our brain functions and to develop a treatment to brain diseases. Unlike conventional approaches in neuroscience, our approach, based on deep tissue light focusing, aims to interrogate the neuronal network in non-invasive and spatially-resolved (in the scale of a few tens of micrometers) manner.</p>
@@ -92,7 +88,7 @@
 									<!-- Research 3 -->
 									<li>
 										<div class="image research">
-											<img class="io-img" data-src="images/FIG3_LightManipulation_resize.jpg"  alt="Pic 02" />
+											<img class="io-img" data-src="images/FIG3_LightManipulation_resize.jpg"  />
 										</div>
 										<h3 style="font-size:1.5em; padding-top:0.5em">Advanced Light Manipulation</h3>
 										<p style='text-align:left;'>For more than 50 years, the design paradigm of optical components has been dictated by a set of principles such as the basic rules of refraction and diffraction. We aim to combine the concepts emerged from two subfields of optics – complex wavefront shaping and metasurface – to challenge the conventional paradigm, and thereby unlock the optical space that is inaccessible with conventional optics.</p>
@@ -301,7 +297,7 @@
 		    images.forEach((el) => io.observe(el));
 			</script>
 
-			<!-- Initialize Swiper slider -->
+			<!-- Initialize Swiper -->
 			<script>
 					new Swiper('.multi-auto', {
 						slidesPerView: 1,
