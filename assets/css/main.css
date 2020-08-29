@@ -4,6 +4,71 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* quicksand-300 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/quicksand-v21-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v21-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v21-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v21-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v21-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v21-latin-300.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+/* quicksand-regular - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v21-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v21-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+/* quicksand-500 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/quicksand-v21-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v21-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v21-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v21-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v21-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v21-latin-500.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+/* quicksand-700 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/quicksand-v21-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v21-latin-700.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+/* quicksand-600 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/quicksand-v21-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v21-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v21-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v21-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v21-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v21-latin-600.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -126,7 +191,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Quicksand";
+		font-family: "Quicksand", sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.5;
@@ -1595,7 +1660,8 @@ input, select, textarea {
 
 		#nav.alt {
 			position: fixed;
-			top: -11px; left:0; right:0;
+			top: 0px; left:0; right:0;
+			transform: none;
 			width:auto;
 			padding: 0.5em 0.5em;
 			background-color: rgba(247, 247, 247, 0.95);
