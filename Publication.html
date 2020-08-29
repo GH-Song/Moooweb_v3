@@ -17,8 +17,10 @@
 			table tbody tr { border: solid 0px; counter-increment: mycounter; }
 			table tbody tr td:first-child:before { content:counter(mycounter) ""; }
 			table td { word-break:keep-all; width: 3%; }
-			h3{	font-size: 1.5em;	font-weight: 500;	}
-			body{ line-height: 1.8;}
+			h3{	font-size: 1.8em;	font-weight: 500;	line-height: 2;}
+			body{ line-height: 1.6;}
+			.author-notice {text-align: left!important;}
+			.author-notice p {letter-spacing: 0.05em!important; display:inline; }
 	  </style>
 
 	</head>
@@ -54,8 +56,8 @@
 
 								<header class="major">
 									<h2>Publication</h2>
-									<div>
-										<p style="font-size:1em; font-weight:500; display:inline;">Author info  </p> <p style="font-size:0.9em; font-weight:300; display:inline;"> &nbsp; <strong>&ast;</strong>:&nbsp;first, &nbsp;<strong>&dagger;</strong>:&nbsp;corresponding (If not specified, first is the first, corresponding is the last)</p>
+									<div class="author-notice">
+										<p style="font-size:1em; font-weight:500;">Author info  </p> <p style="font-size:0.9em; font-weight:300;"> &nbsp; <strong>&ast;</strong>:&nbsp;first, &nbsp;<strong>&dagger;</strong>:&nbsp;corresponding (If not specified, first is the first, corresponding is the last)</p>
 									</div>
 								</header>
 
