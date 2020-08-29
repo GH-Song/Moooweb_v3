@@ -2765,12 +2765,13 @@ input, select, textarea {
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
-			overflow:visible;
+		overflow:visible;
 		}
 
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
+		overflow:visible;
 	}
 
 		table tbody tr {
@@ -3880,3 +3881,73 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* 직접 작성*/
+
+.io-img {
+	width: 80%;
+	height: 80%;
+}
+
+/* Publication */
+.pub_thumb {
+	text-align: center;
+	min-width: 200px;
+	height: 220px;
+}
+
+@media (hover: hover) {
+	.pub_thumb:hover img{
+			transform: scale(2.6);
+			-webkit-transform: scale(2.6);
+			-moz-transform: scale(2.6);
+			-ms-transform: scale(2.6);
+			-o-transform: scale(2.6);
+			z-index: 100000;
+			position: relative;
+			box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+			transition: transform 0.5s, background-color 0s;
+			transition-timing-function: ease-in-out;
+	}
+}
+.pub_thumb img{
+	 text-align: center;
+	max-width:100%; max-height:100%; width:auto; height:auto;
+	border-radius: 8px;
+	transition: width 0.2s, height 0.2s, transform 0.5s, background-color 0s;
+	transition-timing-function: ease-in-out;
+	background: white;
+	padding: 8px;
+}
+.pub_reference {
+	width: 70%;
+	font-size: 0.9em;
+}
+.pub_reference h4{
+	font-size: 1.4em;
+	font-weight: 300;
+}
+@media all and (max-width:736px) {
+	table td {
+		display: block;
+	}
+	.pub_thumb {
+		text-align: center;
+		width: 100%;
+		height: 150px;
+	}
+	.pub_reference {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+/* Index */
+.gallery-top {height: 80%;	width: 100%;}
+.gallery-top .swiper-slide {background-color: white;}
+.gallery-top img {max-width: 90%;	height:300px;	 margin: auto;}
+.gallery-thumbs {height: 20%; box-sizing: border-box;  padding: 10px 0;}
+.gallery-thumbs img {max-width: 100%;	max-height:10vw;	margin: auto;}
+.gallery-thumbs .swiper-slide {height: 100%; opacity: 0.4;	cursor: pointer;}
+.gallery-thumbs .swiper-slide-thumb-active {opacity: 1;}
