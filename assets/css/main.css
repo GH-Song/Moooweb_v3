@@ -1311,6 +1311,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		width: 100%;
 		overflow: visible;
+		display:table;
 	}
 
 		table tbody tr {
@@ -1330,6 +1331,7 @@ input, select, textarea {
 			text-align: left;
 			vertical-align: middle;
 			background-color: transparent !important;
+			display:table-cell;
 		}
 
 		table th {
