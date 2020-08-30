@@ -1320,6 +1320,7 @@ input, select, textarea {
 			border-right: 0;
 			border-color: #dddddd;
 			overflow:hidden;
+			display:table-cell;
 		}
 
 		table tbody tr:nth-child(2n + 1) {
