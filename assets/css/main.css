@@ -1326,9 +1326,10 @@ input, select, textarea {
 		}
 
 		table td {
-			padding: 0.2em 0.65em 0.2em 0.65em;
+			padding: 0.3em 0.65em 0.3em 0.65em;
 			text-align: left;
 			vertical-align: middle;
+			background-color: none;
 		}
 
 		table th {
@@ -2143,10 +2144,12 @@ input, select, textarea {
 
 /* Publication */
 .pub_thumb {
+	position:relative;
+	vertical-align: middle;
 	text-align: center;
 	min-width: 200px;
 	height: 150px;
-	padding-top: 0.5em;
+	background: none;
 }
 
 @media (hover: hover) {
@@ -2156,7 +2159,7 @@ input, select, textarea {
 			-moz-transform: scale(2.6);
 			-ms-transform: scale(2.6);
 			-o-transform: scale(2.6);
-			z-index: 100000;
+			z-index: 100001;
 			position: relative;
 			box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
 			transition: transform 0.5s, background-color 0s;
@@ -2166,6 +2169,7 @@ input, select, textarea {
 .pub_thumb img{
 	text-align: center;
 	max-width:100%; max-height:100%; width:auto; height:auto;
+	margin:0;
 	border-radius: 8px;
 	transition: width 0.2s, height 0.2s, transform 0.5s, background-color 0s;
 	transition-timing-function: ease-in-out;
