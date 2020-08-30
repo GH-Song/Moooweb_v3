@@ -2146,9 +2146,8 @@ input, select, textarea {
 .pub_thumb {
 	position: relative;
 	text-align: center;
-	min-width: 200px;
+	width: 20%;
 	background-color: transparent !important;
-	height: 140px;
 }
 
 @media (hover: hover) {
