@@ -2144,10 +2144,10 @@ input, select, textarea {
 
 /* Publication */
 .pub_thumb {
-	position: relative;
 	text-align: center;
 	width: 20%;
 	background-color: transparent !important;
+	height:auto;
 }
 
 @media (hover: hover) {
