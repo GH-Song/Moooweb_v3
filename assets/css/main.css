@@ -2149,6 +2149,7 @@ input, select, textarea {
 	text-align: center;
 	width: 20%;
 	background-color: transparent !important;
+	margin:auto;
 }
 
 @media (hover: hover) {
