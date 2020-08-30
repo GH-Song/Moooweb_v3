@@ -1311,7 +1311,7 @@ input, select, textarea {
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
-		overflow:visible;
+		overflow:hidden;
 	}
 
 		table tbody tr {
