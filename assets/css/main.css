@@ -2139,17 +2139,19 @@ input, select, textarea {
 /* 직접 작성*/
 
 .io-img {
-	width: 80%;
-	height: 80%;
 	background: rgba(100,100,100,0.05);
 }
 
 /* Publication */
 .pub_thumb {
 	text-align: center;
-	width: 20%;
+	width: 100%;
+	height: 100%;
 	background-color: transparent !important;
 	margin:auto;
+}
+.pub_fig {
+	width:10%
 }
 
 @media (hover: hover) {
@@ -2177,8 +2179,8 @@ input, select, textarea {
 	padding: 8px;
 }
 .pub_reference {
-	width: 70%;
 	font-size: 0.8em;
+	width:80%;
 }
 .pub_reference h4{
 	font-size: 1.3em;
