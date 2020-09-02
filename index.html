@@ -16,7 +16,7 @@
 
 		<style type="text/css">
 			.swiper-container {
-			  max-width: 90%;
+			  max-width: 100%;
 				height: 100%;
 				margin: auto;
 			}
@@ -25,18 +25,13 @@
 	  </style>
 	</head>
 
-	<body class="is-preload">
-		<!-- Swiper -->
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
 				<!-- Header -->
 					<header id="header" class="alt">
 						<!--<span class="logo"><img src="images/logo.svg" alt="" /></span>-->
 						<h1>Mooo Research Group</h1>
 						<p>Optical Imaging & Light Manipulation</p>
 					</header>
+
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -51,7 +46,8 @@
 
 				<!-- Main -->
 					<div id="main">
-
+						<!-- Wrapper -->
+							<div id="wrapper">
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
@@ -90,7 +86,7 @@
 											<img class="io-img" data-src="images/FIG3_LightManipulation_resize.jpg"  />
 										</div>
 										<h3 style="font-size:1.5em; padding-top:0.5em">Advanced Light Manipulation</h3>
-										<p style='text-align:left;'>For more than 50 years, the design paradigm of optical components has been dictated by a set of principles such as the basic rules of refraction and diffraction. We aim to combine the concepts emerged from two subfields of optics – complex wavefront shaping and metasurface – to challenge the conventional paradigm, and thereby unlock the optical space that is inaccessible with conventional optics.</p>
+										<p style='text-align:justify;'>For more than 50 years, the design paradigm of optical components has been dictated by a set of principles such as the basic rules of refraction and diffraction. We aim to combine the concepts emerged from two subfields of optics – complex wavefront shaping and metasurface – to challenge the conventional paradigm, and thereby unlock the optical space that is inaccessible with conventional optics.</p>
 									</li>
 									<li><h3> </h3><div></div></li>
 								</ul>
@@ -103,9 +99,12 @@
 							</section>
 
 
+						</div>
 
 						<!-- PEOPLE -->
 							<section id="colorpoint" class="main special" style="color:white; padding:20px; ">
+								<!-- Wrapper -->
+									<div id="wrapper">
 								<header class="major">
 									<h2>People</h2>
 								</header>
@@ -189,10 +188,14 @@
 										<li><a href="People.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
+								</div>
 							</section>
+
 
 						<!-- Gallery -->
 							<section id="five" class="main special">
+								<!-- Wrapper -->
+									<div id="wrapper">
 								<header class="major">
 									<h2>Lab interior</h2>
 								</header>
@@ -226,16 +229,18 @@
 
 								<footer class="major">	</footer>
 
-
+						</div>
 							</section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
+
 						<section>
-								<p>&copy; Copyright 2020 Mooo Research Group.</br>Theme : Stellar, designed by <a href="https://html5up.net">HTML5 UP.</a></p>
-								<p> KAIST | Bio & Brain Engineering</p>
+
+								<p style="font-size:1.2em; font-family:sans-serif; font-weight:600; color:#ddd"><a href="https://bioeng.kaist.ac.kr/" style="border:0px">KAIST | Bio & Brain Engineering </a></p>
+								<p>&copy; Copyright 2020 Mooo Research Group. <a href="https://html5up.net">HTML5_UP</a></p>
 						</section>
 						<section>
 							<dl class="alt">
@@ -248,7 +253,6 @@
 
 					</footer>
 
-			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -258,7 +262,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/sticky.js"></script>
 			<script src="package/js/swiper.min.js"></script>
 
 			<!-- Image Lazy loading -->
@@ -299,20 +303,16 @@
 			          slidesPerView: 1,
 			          spaceBetween: 20,
 			        },
-							736: {
-			          slidesPerView: 2,
-			          spaceBetween: 30,
-			        },
 			        980: {
-			          slidesPerView: 3,
+			          slidesPerView: 2,
 			          spaceBetween: 40,
 			        },
 			        1280: {
-			          slidesPerView: 4,
+			          slidesPerView: 3,
 			          spaceBetween: 40,
 			        },
 							1600: {
-			          slidesPerView: 5,
+			          slidesPerView: 4,
 			          spaceBetween: 50,
 			        },
 			      }

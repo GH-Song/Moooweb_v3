@@ -38,9 +38,12 @@
 						mode: 'top',
 						enter: function() {
 							$nav.addClass('alt');
+							$nav.stop().animate({opacity:'0', padding:'0.2em'},0,'easeInOutBounce',function()
+							{$nav.stop().animate({opacity:'1', padding:'0.9em'},400); }	);
 						},
 						leave: function() {
 							$nav.removeClass('alt');
+							$nav.stop().animate({ padding:'0.4em'},0,'easeInOutBounce');
 						},
 					});
 
