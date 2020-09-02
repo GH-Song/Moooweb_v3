@@ -22,6 +22,19 @@
 			}
 			.swiper-slide {margin: 0 auto auto auto;}
 			.io-img { margin-bottom: 2rem; }
+			.research-poster{
+				width:90%;
+				height:300px;
+				max-width:100%; max-height:100%;
+				border:solid 1px #eee;
+				text-align: center;
+			}
+			.research-poster img{
+				position: relative;
+				vertical-align: middle;
+				width:auto; height:auto;
+				max-width:100%; max-height:100%;
+			}
 	  </style>
 	</head>
 
@@ -50,46 +63,50 @@
 							<div id="wrapper">
 						<!-- First Section -->
 							<section id="first" class="main special">
-								<header class="major">
-									<h2>Research</h2>
-								</header>
+								<div class="swiper-container single-auto">
+									<div class="swiper-wrapper">
+
+											<!-- mooseok jang -->
+											<div class="swiper-slide">
+													<div class="research-poster">
+														<img src="images/FIG1_DeepTissue_Resize.jpg"  />
+													</div>
+													<div class="name" >
+													<h3 style="font-size:1.5em; padding-top:0.5em">Deep Tissue Imaging</h3>
+													</div>
+												</div>
+											<!-- mooseok jang -->
+											<div class="swiper-slide">
+													<div class="research-poster">
+														<img src="images/FIG2_Neuromodulation_resize.png"  />
+													</div>
+													<div class="name" >
+														<h3 style="font-size:1.5em; padding-top:0.5em">Optical Neuromodulation</h3>
+													</div>
+												</div>
+											<!-- mooseok jang -->
+											<div class="swiper-slide">
+													<div class="research-poster">
+														<img src="images/FIG3_LightManipulation_resize.jpg"  />
+													</div>
+													<div class="name">
+													<h3 style="font-size:1.5em; padding-top:0.5em">Advanced Light Manipulation</h3>
+													</div>
+											</div>
+										</div>
+									</br></br>
+										<div class="swiper-pagination"></div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+
+
+
 								<div style='text-align:justify;'>
 								<p>Our group will explore the interdisciplinary research area of optics, biomedicine, neuroscience, and nanophotonics. Please find more information about our group below. If you are interested in joining us, please send an email to <a href="mailto:%20mooseok@kaist.ac.kr">'mooseok@kaist.ac.kr'</a>. Any motivated candidates at the level of undergarduate, PhD or postdoc will be highly welcomed. Prior experience in optics is not necessary!</p>
 
 								<p>We are the research group led by Prof. Mooseok Jang (	<a href="http://mooo.ivyro.net/Mooseok%20Jang_CV_PUBLIC.pdf">[C.V.]</a> and <a href="https://scholar.google.com/citations?user=QYPGDkAAAAAJ&hl=en">[Google Scholar]</a>). We focus on the development of novel tools that combine optics, acoustics, and nanophotonics to tackle problems in biology and medicine.</p>
 							</div>
-
-								<ul class="features">
-									<!-- Research 1 -->
-									<li>
-										<div class="image research">
-											<img class="io-img" data-src="images/FIG1_DeepTissue_Resize.jpg" />
-										</div>
-
-										<h2 style="font-size:1.5em; padding-top:0.5em">Deep Tissue Imaging</h2>
-										<p style='text-align:justify;'>Solving the problem of light scattering in biological tissues is a central goal in biomedical imaging. To date, the accessible depth of optical methods is limited to the superficial layer of biological tissues (approximately, 1 mm). We aim to increase the accessible depth through approaches based on wavefront manipulation and ultrasound-light interaction.</p>
-									</li>
-									<!-- Research 2 -->
-									<li>
-										<div class="image research">
-											<img class="io-img" data-src="images/FIG2_Neuromodulation_resize.png" />
-										</div>
-										<h3 style="font-size:1.5em; padding-top:0.5em">Optical Neuromodulation</h3>
-										<p style='text-align:justify;'>Adult brain is composed more than 80 billion neurons and 100 trillion synapses (i.e. a junction between neurons). Revealing such complex connection represents an indispensable foundation to understand how our brain functions and to develop a treatment to brain diseases. Unlike conventional approaches in neuroscience, our approach, based on deep tissue light focusing, aims to interrogate the neuronal network in non-invasive and spatially-resolved (in the scale of a few tens of micrometers) manner.</p>
-									</li>
-								</ul>
-
-								<ul class="features">
-									<!-- Research 3 -->
-									<li>
-										<div class="image research">
-											<img class="io-img" data-src="images/FIG3_LightManipulation_resize.jpg"  />
-										</div>
-										<h3 style="font-size:1.5em; padding-top:0.5em">Advanced Light Manipulation</h3>
-										<p style='text-align:justify;'>For more than 50 years, the design paradigm of optical components has been dictated by a set of principles such as the basic rules of refraction and diffraction. We aim to combine the concepts emerged from two subfields of optics – complex wavefront shaping and metasurface – to challenge the conventional paradigm, and thereby unlock the optical space that is inaccessible with conventional optics.</p>
-									</li>
-									<li><h3> </h3><div></div></li>
-								</ul>
 
 								<footer class="major">
 									<ul class="actions special">
@@ -317,7 +334,23 @@
 			        },
 			      }
 			    });
-
+					new Swiper('.single-auto', {
+						slidesPerView: 1,
+						spaceBetween: 30,
+						loop: true,
+			      autoplay: {
+			        delay: 3000,
+			        disableOnInteraction: false,
+			      },
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      }
+			    });
 					 var galleryThumbs = new Swiper('.gallery-thumbs', {
 			      spaceBetween: 10,
 			      slidesPerView: 8,
